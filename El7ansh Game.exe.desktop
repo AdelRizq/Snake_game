@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=snake
+Exec=/home/adel_rizq/Desktop/Snake/Snake_Code.py
+Path=/home/adel_rizq/Desktop/Snake/
+Icon=/home/adel_rizq/Desktop/Snake/Snake Head.png
+Type=Application
+Name[en_US]=El7ansh Game.exe
