@@ -27,8 +27,8 @@ snakeLen = 1
 block_size = 20
 AppleThickness = 30
 
-FPS = 15
-Screen_FPS = 50
+FPS = 20
+Screen_FPS = 55
 
 clock = pygame.time.Clock()
 
