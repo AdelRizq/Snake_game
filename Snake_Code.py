@@ -4,19 +4,19 @@ import pygame
 import time
 import random
 
-display_height = 680
-display_width = 880
+display_height = 600
+display_width = 800
 
 pygame.init()
 gameDisplay = pygame.display.set_mode((display_width, display_height))
-pygame.display.set_caption('Snake')
+pygame.display.set_caption('Snake Game')
 
 white = (255, 255, 255)
 black = (0, 0, 0)
 green = (0, 255, 0)
 blue = (0, 0, 255)
 red = (255, 0, 0)
-burble = (186,85,211)
+burble = (185,88,211)
 
 gameExit = True
 
