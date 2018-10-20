@@ -120,7 +120,7 @@ def intro_screen():
         msg_to_screen('The Objective is to eat Apples as much as U can.', green, -60, 'upsmall')
         msg_to_screen('The more U eat, the longer U get.', green, -30, 'upsmall')
         msg_to_screen('if U hit edges or yourself, U die.', green, -0, 'upsmall')
-        msg_to_screen('Press C to play :) P to pause -_- Q to Quit :(', blue, 80, 'medium')
+        msg_to_screen('Press C to play Or P to pause -_- Q to Quit ', green, 80, 'medium')
         msg_to_screen('Press Escape at anytime to Leave :[', blue, 130, 'medium')
         pygame.display.update()
         
