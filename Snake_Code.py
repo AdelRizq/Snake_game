@@ -116,7 +116,7 @@ def intro_screen():
     
     while intro:
         gameDisplay.fill(white)
-        msg_to_screen('Welcome to El7ansh', blue, -150, 'large')
+        msg_to_screen('Welcome to HamDola Snake', blue, -150, 'large')
         msg_to_screen('The Objective is to eat Apples as much as U can.', green, -60, 'upsmall')
         msg_to_screen('The more U eat, the longer U get.', green, -30, 'upsmall')
         msg_to_screen('if U hit edges or yourself, U die.', green, -0, 'upsmall')
