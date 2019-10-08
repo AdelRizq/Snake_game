@@ -20,7 +20,7 @@ burble = (186,85,211)
 
 gameExit = True
 
-snake_length = 10
+snake_length = 20
 snake_width = 10
 snakeLen = 1
 
@@ -28,7 +28,7 @@ block_size = 20
 AppleThickness = 30
 
 FPS = 15
-Screen_FPS = 50
+Screen_FPS = 60
 
 clock = pygame.time.Clock()
 
@@ -116,8 +116,8 @@ def intro_screen():
     
     while intro:
         gameDisplay.fill(white)
-        msg_to_screen('Welcome to El7ansh', blue, -150, 'large')
-        msg_to_screen('The Objective is to eat Apples as much as U can.', green, -60, 'upsmall')
+        msg_to_screen('Welcome to HamDola Snake', blue, -150, 'large')
+        msg_to_screen('The Objective is to eat Apples as much as U can If U Can.', red, -60, 'upsmall')
         msg_to_screen('The more U eat, the longer U get.', green, -30, 'upsmall')
         msg_to_screen('if U hit edges or yourself, U die.', green, -0, 'upsmall')
         msg_to_screen('Press C to play :) P to pause -_- Q to Quit :(', blue, 80, 'medium')
@@ -139,7 +139,7 @@ def intro_screen():
 
 
 def score(score):
-    show = uppersmallfont.render("Score: " + str(score), True, blue)
+    show = uppersmallfont.render("Your Score: " + str(score), True, blue)
     gameDisplay.blit(show, (10, 10))
     
 
@@ -188,14 +188,15 @@ def gameloop():
     
     gameExit = True
     gameover = True
-
+    
+    # Identify the changes in the position of x,y
     change_x = 0
     change_y = 0
 
     lead_x = display_width // 2
     lead_y = display_height // 2
 
-    snakeList = []
+    snakeList = [] #to keep the snake components.
     global snakeLen
     snakeLen = 1
     appleX, appleY = Apple_Gen(snakeList)
