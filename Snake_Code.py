@@ -228,6 +228,7 @@ def gameloop():
             if event.type == pygame.QUIT:
                 gameExit = False
             if event.type == pygame.KEYDOWN:
+            	# Right Key
                 if event.key == pygame.K_RIGHT:
                     if event_key_temp == 'left':
                         direction = 'left'
@@ -236,6 +237,7 @@ def gameloop():
                         direction = 'right'
                         change_x = block_size
                     change_y = 0
+                #Left Key
                 elif event.key == pygame.K_LEFT:
                     if event_key_temp == 'right':
                         direction = 'right'
@@ -244,6 +246,7 @@ def gameloop():
                         direction = 'left'
                         change_x = -block_size
                     change_y = 0
+                #Up Key
                 elif event.key == pygame.K_UP:
                     if event_key_temp == 'down':
                         direction = 'down'
@@ -252,6 +255,7 @@ def gameloop():
                         direction = 'up'
                         change_y = -block_size
                     change_x = 0
+                #Down Key
                 elif event.key == pygame.K_DOWN:
                     if event_key_temp == 'up':
                         direction = 'up'
@@ -260,6 +264,43 @@ def gameloop():
                         direction = 'down'
                         change_y = block_size
                     change_x = 0
+                #D Key
+                if event.key == pygame.K_d:
+                    if event_key_temp == 'left':
+                        direction = 'left'
+                        change_x = -block_size
+                    else:
+                        direction = 'right'
+                        change_x = block_size
+                    change_y = 0
+                #A Key
+                elif event.key == pygame.K_a:
+                    if event_key_temp == 'right':
+                        direction = 'right'
+                        change_x = block_size
+                    else:
+                        direction = 'left'
+                        change_x = -block_size
+                    change_y = 0
+                #W Key
+                elif event.key == pygame.K_w:
+                    if event_key_temp == 'down':
+                        direction = 'down'
+                        change_y = block_size
+                    else:
+                        direction = 'up'
+                        change_y = -block_size
+                    change_x = 0
+                #S Key
+                elif event.key == pygame.K_s:
+                    if event_key_temp == 'up':
+                        direction = 'up'
+                        change_y = -block_size
+                    else:
+                        direction = 'down'
+                        change_y = block_size
+                    change_x = 0
+                #P Key
                 elif event.key == pygame.K_p:
                     pause()
 
